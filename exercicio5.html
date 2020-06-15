@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Rocketseat</title>
+    </head>
+    <body>
+        <script>
+
+            //função que exibe uma String contendo as habilidades dos usuários
+            function exibeHabilidades(usuarios){
+                for(usuario of usuarios){
+                    console.log(
+                        "O "+ usuario.nome+ " possui as habilidades: "+ usuario.habilidades.join(", ")
+                    );
+                }
+            }
+
+            var usuarios = [  {    nome: "Diego",    habilidades: ["Javascript", "ReactJS", "Redux"]  },  
+            {    nome: "Gabriel",    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]  }
+            ];
+            //executa a função
+            exibeHabilidades(usuarios);
+
+            
+        </script>
+    </body>
+</html>
